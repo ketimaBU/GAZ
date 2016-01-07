@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Gaz" default="relever" basedir=".">
+
+	  <target name="build-deps">
+	        <ant antfile="../BRANCHER/Buildfile.xml" target="brancher"  />
+	  </target>
+
+	    <target name="relever" depends="build-deps">	       
+	        <jar jarfile="relever.jar" includes="*.class"  />
+	    </target>
+	 
+</project>
