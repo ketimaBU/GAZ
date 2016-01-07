@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Gaz" default="recouvrer" basedir=".">
+
+	  <target name="build-deps">
+        <ant antfile="../BRANCHER/Buildfile.xml" target="brancher"  />
+        <ant antfile="../RELEVER/Buildfile.xml" target="relever"  />
+	  	<ant antfile="../FACTURER/Buildfile.xml" target="facturer"  />
+	  		
+	  </target>
+
+	    <target name="recouvrer" depends="build-deps">	       
+	        <jar jarfile="recouvrer.jar" includes="*.class" />
+	    </target>
+	 
+</project>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Gaz" default="brancher" basedir=".">
+  <target name ="brancher"   description="Create a jar for the HW project">
+    <jar jarfile="Brancher.jar" includes="*.class" />
+  </target>
+	 
+</project>

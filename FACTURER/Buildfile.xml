@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Gaz" default="facturer" basedir=".">
+
+	  <target name="build-deps">
+	        <ant antfile="../RELEVER/Buildfile.xml" target="relever" />
+	  </target>
+
+	    <target name="facturer" depends="build-deps">	       
+	        <jar jarfile="facturer.jar" includes="*.class" />
+	    </target>
+	 
+</project>
